@@ -35,33 +35,6 @@ func romanToIntRec(s string, res int) int {
 	return res
 }
 
-func romanToInt(s string) int {
-	res := 0
-
-	cArr := []byte(s)
-	cLen := len(cArr)
-
-	for i := cLen - 1; i >= 0; i-- {
-		r := string(cArr[i])
-		rEqw := roman[r]
-
-		if i+1 < cLen {
-			rNext := string(cArr[i+1])
-			rEqeNext := roman[rNext]
-
-			if rEqw >= rEqeNext {
-				res = res + rEqw
-			} else {
-				res = res - rEqw
-			}
-		} else {
-			res = res + rEqw
-		}
-	}
-
-	return res
-}
-
 func main() {
 	iv := romanToIntRec("IV", 0)
 	iii := romanToIntRec("III", 0)
