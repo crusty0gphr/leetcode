@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package roman_to_integer_recursion
 
 var roman = map[string]int{
 	"I": 1,
@@ -12,7 +10,7 @@ var roman = map[string]int{
 	"M": 1000,
 }
 
-func romanToIntRec(s string, res int) int {
+func romanToInt(s string, res int) int {
 	chars := []byte(s)
 
 	if len(chars) >= 2 {
@@ -25,7 +23,7 @@ func romanToIntRec(s string, res int) int {
 			res = res + num
 		}
 		s = string(chars[1:]) // pop chars[0] and convert ot string
-		return romanToIntRec(s, res)
+		return romanToInt(s, res)
 	}
 
 	if len(chars) == 1 {
@@ -33,14 +31,4 @@ func romanToIntRec(s string, res int) int {
 	}
 
 	return res
-}
-
-func main() {
-	iv := romanToIntRec("IV", 0)
-	iii := romanToIntRec("III", 0)
-	mdxiii := romanToIntRec("MDXIII", 0)
-	mdlix := romanToIntRec("MDLXV", 0)
-	ix := romanToIntRec("IX", 0)
-
-	fmt.Println(iv, iii, mdxiii, mdlix, ix)
 }

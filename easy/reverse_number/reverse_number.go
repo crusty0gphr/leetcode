@@ -1,12 +1,11 @@
-package main
+package reverse_number
 
 import (
-	"fmt"
 	"math"
 )
 
 func reverse(x int) int {
-    return reverseNumber(x, 0)
+	return reverseNumber(x, 0)
 }
 
 func reverseNumber(x int, rev int) int {
@@ -23,9 +22,4 @@ func reverseNumber(x int, rev int) int {
 	}
 
 	return rev
-}
-
-func main() {
-	res := reverse(235)
-	fmt.Println(res)
 }
