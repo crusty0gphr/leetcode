@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package roman_to_integer_loop
 
 var roman = map[string]int{
 	"I": 1,
@@ -38,14 +36,3 @@ func romanToInt(s string) int {
 
 	return res
 }
-
-func main() {
-	iv := romanToInt("IV")
-	iii := romanToInt("III")
-	mdxiii := romanToInt("MDXIII")
-	mdlix := romanToInt("MDLXV")
-	ix := romanToInt("IX")
-
-	fmt.Println(iv, iii, mdxiii, mdlix, ix)
-}
-

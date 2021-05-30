@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run All Test" type="GoTestRunConfiguration" factoryName="Go Test" singleton="false">
+    <module name="leetcode" />
+    <working_directory value="$PROJECT_DIR$" />
+    <go_parameters value="-i" />
+    <kind value="DIRECTORY" />
+    <package value="github.com/harout/leetcode" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$" />
+    <framework value="gotest" />
+    <method v="2" />
+  </configuration>
+</component>
