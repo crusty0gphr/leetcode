@@ -1,6 +1,6 @@
 package merge_sorted_lists
 
-import "github.com/harout/leetcode/easy/lib"
+import "github.com/harout/leetcode/lib"
 
 /**
  * Definition for singly-linked list.

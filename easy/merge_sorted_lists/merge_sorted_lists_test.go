@@ -1,7 +1,7 @@
 package merge_sorted_lists
 
 import (
-	"github.com/harout/leetcode/easy/lib"
+	"github.com/harout/leetcode/lib"
 	"testing"
 )
 
