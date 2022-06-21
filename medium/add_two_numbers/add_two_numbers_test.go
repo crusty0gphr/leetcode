@@ -1,9 +1,9 @@
 package add_two_numbers
 
 import (
-	"fmt"
-	"github.com/harout/leetcode/lib"
 	"testing"
+
+	"github.com/harout/leetcode/lib"
 )
 
 func getMocksOther() (*lib.ListNode, *lib.ListNode) {
@@ -75,11 +75,10 @@ func TestAddTwoNumbers_smallSet(t *testing.T) {
 		if e.Val != list.Val {
 			t.Errorf("f.addTwoNumbers(l1, l2)")
 		}
-		fmt.Println(list.Val)
+
 		list = list.Next
 		e = e.Next
 	}
-	fmt.Println(list.Val)
 
 	if e.Val != list.Val {
 		t.Errorf("f.addTwoNumbers(l1, l2)")
@@ -105,11 +104,10 @@ func TestAddNumbers_largerSet(t *testing.T) {
 		if e.Val != list.Val {
 			t.Errorf("f.addTwoNumbers(l1, l2)")
 		}
-		fmt.Println(list.Val)
+
 		list = list.Next
 		e = e.Next
 	}
-	fmt.Println(list.Val)
 	if e.Val != list.Val {
 		t.Errorf("f.addTwoNumbers(l1, l2)")
 	}
@@ -128,11 +126,10 @@ func TestAddNumbers_zero_set(t *testing.T) {
 		if e.Val != list.Val {
 			t.Errorf("f.addTwoNumbers(l1, l2)")
 		}
-		fmt.Println(list.Val)
+
 		list = list.Next
 		e = e.Next
 	}
-	fmt.Println(list.Val)
 	if e.Val != list.Val {
 		t.Errorf("f.addTwoNumbers(l1, l2)")
 	}
@@ -151,11 +148,10 @@ func TestAddNumbers(t *testing.T) {
 		//if e.Val != list.Val {
 		//	t.Errorf("f.addTwoNumbers(l1, l2)")
 		//}
-		fmt.Println(list.Val)
+
 		list = list.Next
 		//e = e.Next
 	}
-	fmt.Println(list.Val)
 	//if e.Val != list.Val {
 	//	t.Errorf("f.addTwoNumbers(l1, l2)")
 	//}
